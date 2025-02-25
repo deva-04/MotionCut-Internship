@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.bucket-list {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background: #e0f7fa;
+    transform: scale(1.05);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+i {
+    margin-right: 10px;
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+footer {
+    background: linear-gradient(45deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .bucket-list {
+        width: 90%;
+        padding: 15px;
+    }
+    li {
+        font-size: 16px;
+    }
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+}

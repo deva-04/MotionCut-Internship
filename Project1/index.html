@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Deva's Bucket List</h1>
+    </header>
+    
+    <main>
+        <section class="bucket-list">
+            <ul>
+                <li onclick="toggleComplete(this)"><i class="fas fa-star"></i> Build a Full-Stack Web App from Scratch</li>
+                <li onclick="toggleComplete(this)"><i class="fas fa-star"></i> Contribute to an Open Source Project</li>
+                <li onclick="toggleComplete(this)"><i class="fas fa-star"></i> Crack a Competitive Coding Challenge</li>
+                <li onclick="toggleComplete(this)"><i class="fas fa-star"></i> Develop a Machine Learning Model and Deploy It</li>
+                <li onclick="toggleComplete(this)"><i class="fas fa-star"></i> Travel to a Tech Conference or Hackathon</li>
+                <li onclick="toggleComplete(this)"><i class="fas fa-star"></i> Achieve a 50kg bench press personal record.</li>
+                <li onclick="toggleComplete(this)"><i class="fas fa-star"></i> Get a Well-Paid Data Science or Software Developer Job</li>
+                <li onclick="toggleComplete(this)"><i class="fas fa-star"></i> Run a Marathon or Participate in a Physical Challenge</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Deva's Bucket List | Designed with Passion</p>
+    </footer>
+
+    <script>
+        function toggleComplete(item) {
+            item.classList.toggle("completed");
+            const icon = item.querySelector("i");
+            icon.classList.toggle("fa-star");
+            icon.classList.toggle("fa-check-circle");
+        }
+    </script>
+</body>
+</html>
